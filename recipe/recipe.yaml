@@ -117,7 +117,9 @@ tests:
         - twisted.words.protocols.jabber
         - twisted.words.xish
       pip_check: false
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
   - requirements:
       run:
         - pyhamcrest >=1.9.0
@@ -152,4 +154,3 @@ extra:
     - akrherz
     - nehaljwani
     - ocefpaf
-
