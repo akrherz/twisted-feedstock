@@ -96,8 +96,6 @@ tests:
         - twisted.mail
         - twisted.mail.scripts
         - twisted.names
-        - if: match(python, ">=2,<3")
-          then: twisted.news
         - twisted.pair
         - twisted.persisted
         - twisted.plugins
